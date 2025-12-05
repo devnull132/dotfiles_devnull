@@ -1,0 +1,54 @@
+
+# Шрифт - исправлено: убран дублирующий font_size
+# font_family Minecraft Default Regular
+# bold_font        Minecraft Default Bold
+# italic_font      Minecraft Default Italic
+# bold_italc_font Minecraft Default Bold Italic
+
+font_family Monocraft Bold
+font_size        12
+
+color0  #23172B  
+color1  #3A2A4A
+color2  #4F3D62
+color3  #65507A
+color4  #7B6392 
+color5  #9176AA
+color6  #A78AC2  
+color7  #BD9EDA
+color8  #CBB1E1  
+color9  #D9C4E8
+color10 #E6D7EF
+color11 #F0E5F5
+color12 #F5EDF8
+color13 #FAF6FC
+color14 #FDFAFE
+color15 #FFFFFF  
+
+# Цветовая схема (монохромный минимализм) 
+foreground #e0e0e0
+background #1a1a1a
+cursor #FFFFFF
+cursor_text_color #1A1A1A
+selection_background #5c00b3
+
+# Прозрачность + blur (требуется поддержка compositor)
+background_opacity 0.70
+dynamic_background_opacity yes
+
+# Курсор и оформление
+cursor_shape beam
+cursor_trail 100
+
+# Минималистичные табы
+tab_bar_style powerline
+tab_powerline_style angled
+active_tab_foreground   #111111
+active_tab_background   #e0e0e0
+inactive_tab_foreground #888888
+inactive_tab_background #333333
+allow_remote_control yes
+listen_on unix:/tmp/kitty
+include /tmp/kitty_colors.conf
+
+
