@@ -101,7 +101,7 @@
       "type": "gpu",
       "key": "  󰊴 GPU",
       "keyColor": "blue",
-      "format": "{1} (femboy edition)"
+      "format": "{2} {3} (femboy edition)"
     },
     {
       "type": "gpu",
