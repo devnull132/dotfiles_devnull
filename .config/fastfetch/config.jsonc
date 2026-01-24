@@ -42,7 +42,7 @@
       "type": "os",
       "key": "  󰣇 OS",
       "keyColor": "red",
-      "format": "{1} (femboy version)"
+      "format": "CachyOS x86_64 (femboy version)"
     },
     {
       "type": "kernel",
