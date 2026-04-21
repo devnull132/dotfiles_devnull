@@ -1,0 +1,71 @@
+{
+    "layer": "top",
+    "modules-left": [
+        "niri/workspaces",
+        "cpu",
+        "memory",
+        "tray"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "custom/power"
+    ],
+    "pulseaudio": {
+        "tooltip": false,
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": "{icon} {volume}%",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    },
+    "network": {
+        "interface": "wlan1",
+        "tooltip": false,
+        "format-wifi": "  {essid}",
+        "format-ethernet": "󰈀 {ifname}",
+        "format-disconnected": " Disconnected",
+        "on-click": "nm-connection-editor"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "  {:%I:%M %p}",
+        "format-alt": "  {:%d.%m.%Y}",
+        "tooltip-format": "{:%A, %d %B %Y}",
+        "on-click": "click"
+    },
+    "cpu": {
+        "interval": 15,
+        "format": "  {usage}%",
+        "max-length": 10
+    },
+    "memory": {
+        "interval": 15,
+        "format": "  {}%",
+        "max-length": 10
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "nwg-bar"
+    },
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    }
+
+}

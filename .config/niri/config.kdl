@@ -1,0 +1,91 @@
+// Базовые настройки вывода
+output "DP-1" {
+    mode "2560x1440@164.999"
+    scale 1.0
+    position x=0 y=0
+}
+hotkey-overlay {
+    skip-at-startup
+}
+input {
+    focus-follows-mouse
+    keyboard {
+        xkb {
+            layout "us,ru"
+            options "grp:win_space_toggle"
+        }
+    }
+}
+// Глобальные настройки окон
+layout {
+    gaps 12
+    
+    // Фокусная рамка (фиолетово-розовая)
+    focus-ring {
+        width 5
+        active-color "#c084fc"      // Фиолетовый
+        inactive-color "#6b21a5"    // Тёмно-фиолетовый
+    }
+    
+}
+
+// Анимации
+animations {
+    window-open {
+        spring damping-ratio=0.7 stiffness=800 epsilon=0.0001
+    }
+    window-close {
+        spring damping-ratio=0.7 stiffness=800 epsilon=0.0001
+    }
+}
+
+// Автозапуск
+spawn-at-startup "/home/daniil/Scripts/theme_niri.sh"
+spawn-at-startup "waybar"
+spawn-at-startup "mako" 
+spawn-at-startup "Telegram -startintray"
+// Правила для окон со скруглением
+window-rule {
+    match app-id="kitty"
+    geometry-corner-radius 15
+    opacity 0.9
+    draw-border-with-background false
+}
+
+window-rule {
+    match app-id="firefox"
+    geometry-corner-radius 10
+}
+
+window-rule {
+    match app-id="telegram-desktop"
+    geometry-corner-radius 12
+}
+
+window-rule {
+    match app-id="nautilus"
+    geometry-corner-radius 12
+}
+
+// Горячие клавиши
+binds {
+    Mod+Return { spawn "kitty"; }
+    Mod+T { spawn "Telegram"; }
+    Mod+F { spawn "firefox"; }
+    Mod+N { spawn "nautilus"; }
+    Mod+Alt+A { spawn "wofi"; }
+    Mod+W { spawn "/home/daniil/Scripts/theme_niri.sh"; }
+    Mod+Q { close-window; }
+    Mod+F11 { fullscreen-window; }
+    Print { screenshot; }
+    Mod+K { focus-column-left; }
+    Mod+L { focus-column-right; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+L { move-column-right; }
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+Shift+1 { move-column-to-workspace 1; }
+    Mod+Shift+2 { move-column-to-workspace 2; }
+    Mod+Shift+3 { move-column-to-workspace 3; }
+}

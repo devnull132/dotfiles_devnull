@@ -1,0 +1,107 @@
+window {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", monospace;
+    font-size: 14px;
+}
+
+/* Outer bar container */
+#outer-box {
+    margin: 0px;
+}
+
+/* Inner bar container */
+#inner-box {
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(156, 142, 122, 0.5);
+    padding: 8px;
+    margin: 8px;
+    background-color: rgba(20, 20, 20, 0.3);
+}
+
+/* Input field */
+#input {
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(30, 30, 30, 0.8);
+    color: #ffffff;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin: 8px;
+}
+
+#input:focus {
+    border: none;
+    box-shadow: 0 0 8px rgba(156, 142, 122, 0.5);
+}
+
+/* Entry (each app row) */
+#entry {
+    border-radius: 12px;
+    padding: 8px 12px;
+    margin: 4px 8px;
+    transition: 0.2s ease;
+}
+
+#entry:selected {
+    background-color: rgba(156, 142, 122, 0.3);
+    border-left: 3px solid #9c8e7a;
+}
+
+/* Text inside entries */
+#text {
+    color: #e0e0e0;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#text:selected {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Icons */
+#img {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+
+/* Buttons (if any) */
+button, image {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+}
+
+button {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    transition: 0.3s ease;
+    font-family: "JetBrains Mono", monospace;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar */
+scrollbar {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+scrollbar slider {
+    background-color: rgba(156, 142, 122, 0.5);
+    border-radius: 10px;
+    min-width: 6px;
+}
