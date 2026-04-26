@@ -42,13 +42,10 @@ source /home/daniil/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ===== Основные алиасы =====
 alias wlan='ip a | grep "wlan"'
-alias nf='./scripts/neofetch.sh'
 alias rabbit='docker run --rm -p 15672:15672 -p 5672:5672 rabbitmq:3.10.7-management'
 alias redis='docker run --rm -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack'
 alias pizdec="sudo archarchive"
 alias otla='otter-launcher'
-alias tiled='bspc node -t tiled'
-alias floating='bspc node -t floating'
 alias g='git'
 alias earth='curl http://ascii.live/earth'
 alias cls='clear'
@@ -56,20 +53,15 @@ alias top='btop'
 alias n='nvim'
 alias gs='git status'
 alias ll='exa --icons --long --header -lah'
-alias q='bspc wm -r'
 alias ff='fastfetch'
 alias meow='nyancat'
-alias hstr="history | awk '{CMD[$2]++} END {for (a in CMD) print CMD[a], a}' | sort -rn | head -10"
 alias cmg='cmatrix'
-alias zshrc='nvim ~/.zshrc'
-alias cfg='nvim ~/.config/bspwm/bspwmrc'
 alias alg='nvim ~/Projects/Python/CodeWars/'
-alias server='java -Xmx2G -Xms1G -jar server.jar nogui'
+alias server='cd ~/NeoForgeServer/NeoForgeServer/ && ./run.sh'
 alias mc='java -jar HMCL-3.7.3.jar'
 alias commit="git add . && git commit -m"
-alias gcm="git commit -m"
 alias fish="asciiquarium"
-alias theme="~/Scripts/theme.sh"
+alias theme="~/Scripts/theme_niri.sh"
 # ===== Python алиасы =====
 # Goto
 [[ -f /home/daniil/Scripts/goto.py ]] && alias goto='python /home/daniil/Scripts/goto.py'
