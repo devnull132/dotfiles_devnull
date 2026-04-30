@@ -10,6 +10,7 @@
         "clock"
     ],
     "modules-right": [
+        "niri/language", 
         "network",
         "pulseaudio",
         "custom/power"
@@ -65,7 +66,11 @@
         "format-icons": {
             "active": "",
             "default": ""
+        } 
+    }, 
+    "niri/language": {
+            "format": "  {short}",
+            "tooltip": false,
+            "on-click": "niri msg action switch-layout next"
         }
-    }
-
 }

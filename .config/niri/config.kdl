@@ -44,7 +44,7 @@ spawn-at-startup "/home/daniil/Scripts/theme_niri.sh"
 spawn-at-startup "waybar"
 spawn-at-startup "mako" 
 spawn-at-startup "xwayland-satellite"
-spawn-at-startup "Telegram -startintray"
+spawn-at-startup "happ"
 // Правила для окон со скруглением
 window-rule {
     match app-id="kitty"
@@ -76,6 +76,7 @@ binds {
     Mod+N { spawn "nautilus"; }
     Mod+Alt+A { spawn "wofi"; }
     Mod+S { spawn "steam"; }
+    Mod+H {spawn "happ"; }
     Mod+W { spawn "/home/daniil/Scripts/theme_niri.sh"; }
     Mod+Q { close-window; }
     Mod+F11 { fullscreen-window; }
