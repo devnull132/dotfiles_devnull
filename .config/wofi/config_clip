@@ -1,0 +1,13 @@
+style=/home/daniil/.config/wofi/style.css
+# Включаем режим dmenu
+dmenu=true
+width=600
+height=400
+always_parse_args=true
+layer=overlay
+insensitive=true
+# Убираем лишние иконки, так как в буфере их нет
+no_actions=true
+# Твой любимый шрифт и центровка
+content_halign=center
+prompt=Последние 15 элементов...

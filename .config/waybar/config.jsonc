@@ -4,16 +4,18 @@
         "niri/workspaces",
         "cpu",
         "memory",
+        "custom/music",
         "tray"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
+        "custom/clipboard",
         "niri/language", 
         "network",
         "pulseaudio",
-        "custom/power"
+        "custom/power" 
     ],
     "pulseaudio": {
         "tooltip": false,
@@ -68,6 +70,20 @@
             "default": ""
         } 
     }, 
+"custom/music": {
+    "format": "{}",
+    "return-type": "text",
+    "interval": 2,
+    "escape": false,
+    "exec": "~/.dotfiles/.config/waybar/scripts/music.sh",
+    "on-click": "~/.dotfiles/.config/waybar/scripts/music_menu.sh", // Открываем меню
+    "tooltip": true
+},
+    "custom/clipboard": {
+        "format": "📋",
+        "on-click": "cliphist list | wofi --dmenu --conf=home/daniil/.config/wofi/config_clip | cliphist decode | wl-copy",
+        "tooltip": false
+    },
     "niri/language": {
             "format": "  {short}",
             "tooltip": false,

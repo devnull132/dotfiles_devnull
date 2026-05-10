@@ -1,0 +1,15 @@
+style=/home/daniil/.config/wofi/style.css
+show=dmenu
+width=250
+height=190
+always_parse_args=true
+show_all=true
+print_command=true
+layer=overlay
+insensitive=true
+prompt=Управление
+# Центрируем текст
+content_halign=center
+# Убираем лишние элементы, если они есть
+display_generic=false
+location=center

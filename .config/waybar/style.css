@@ -17,6 +17,7 @@ tooltip label {
   color: white;
 }
 
+
 #network,
 #pulseaudio,
 #battery,
@@ -32,6 +33,8 @@ tooltip label {
 #custom-notifications,
 #workspaces,
 #language,
+#custom-music,
+#custom-clipboard,
 #power-profiles-daemon,
 #custom-music {
 	margin-top: 6px;
